@@ -3,13 +3,13 @@ public class PassingCars {
 
 	public static void main(String[] args) {
 
-		
+		int result = solution(new int[5]);
 	}
 	
-	public int solution(int[] A) {
+	public static int solution(int[] A) {
         // write your code in Java SE 8
         
-        int result = 0;
+		long result = 0;
         int oneCnt = 0;
         
         int size = A.length;
@@ -23,11 +23,7 @@ public class PassingCars {
             }
         }
         
-        if(result > 1000000000){
-            result = -1;    
-        }
-        
-        return result;
+        return result > 1000000000 ? -1 : (int)result;
     }
 
 }
